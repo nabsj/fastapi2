@@ -7,11 +7,6 @@ import socket
 
 app = Flask(__name__)
 
-@app.route('/')
-def hello_world():
-    return 'Hello, 승준! This is GitHub Action!'
-
-
 # 컴퓨터 이름, ip
 hostname = socket.gethostname()
 hostip = socket.gethostbyname(socket.gethostname())
